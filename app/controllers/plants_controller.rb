@@ -1,4 +1,6 @@
 class PlantsController < ApplicationController
+    wrap_parameters format: []
+    
     def index
         render json: Plant.all, status: :ok
     end
